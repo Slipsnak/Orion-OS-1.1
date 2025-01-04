@@ -1,0 +1,185 @@
+Example 1: File Manager Script
+This script demonstrates how users can create a file, write to it, read it, and delete it using the available file management commands.
+
+File Manager Example
+python
+Copy code
+# File Manager Example Program
+
+def file_manager():
+    print("Welcome to the File Manager! Let's create, read, and delete a file.")
+
+    # Create a new file
+    filename = "example.txt"
+    content = "Hello, this is an example file managed by OrionOS."
+    print(f"Creating file {filename} with content: {content}")
+    handle_command(f"create_file {filename} {content}")
+
+    # Read the file
+    print(f"Reading the content of {filename}...")
+    handle_command(f"read_file {filename}")
+
+    # Delete the file
+    print(f"Deleting file {filename}...")
+    handle_command(f"delete_file {filename}")
+    print(f"File {filename} deleted successfully.")
+
+# Run the file manager
+file_manager()
+Expected Output:
+vbnet
+Copy code
+Welcome to the File Manager! Let's create, read, and delete a file.
+Creating file example.txt with content: Hello, this is an example file managed by OrionOS.
+Reading the content of example.txt...
+Hello, this is an example file managed by OrionOS.
+Deleting file example.txt...
+File example.txt deleted successfully.
+Example 2: User Registration and Login
+This example program shows how to register new users, login, and change passwords.
+
+User Registration and Login Example
+python
+Copy code
+# User Registration and Login Example Program
+
+def user_registration_and_login():
+    print("Welcome to the User Registration and Login System!")
+
+    # Create a new user
+    username = "john_doe"
+    password = "password123"
+    print(f"Creating a new user: {username} with password: {password}")
+    handle_command(f"create_user {username} {password}")
+
+    # Login with the new user
+    print(f"Logging in as {username}...")
+    handle_command(f"login {username} {password}")
+
+    # Change password for the user
+    new_password = "newpassword456"
+    print(f"Changing password for {username}...")
+    handle_command(f"change_password {username} {new_password}")
+
+    # Try logging in with the new password
+    print(f"Logging in with new password for {username}...")
+    handle_command(f"login {username} {new_password}")
+
+# Run the user registration and login example
+user_registration_and_login()
+Expected Output:
+sql
+Copy code
+Welcome to the User Registration and Login System!
+Creating a new user: john_doe with password: password123
+Logging in as john_doe...
+Changing password for john_doe...
+Logging in with new password for john_doe...
+Example 3: Networking – Ping a Website
+This program shows how to ping a website to check its availability.
+
+Ping Website Example
+python
+Copy code
+# Ping Website Example Program
+
+def ping_website_example():
+    print("Ping Website Example Program")
+
+    # Ping a popular website
+    website_url = "https://www.example.com"
+    print(f"Pinging website {website_url} to check availability...")
+    handle_command(f"ping_website {website_url}")
+
+# Run the ping website example
+ping_website_example()
+Expected Output:
+arduino
+Copy code
+Ping Website Example Program
+Pinging website https://www.example.com to check availability...
+Example 4: Backup and Restore System State
+This script shows how to backup and restore the system state. You’ll need to have a valid backup available.
+
+Backup and Restore Example
+python
+Copy code
+# Backup and Restore Example Program
+
+def backup_and_restore_example():
+    print("Backup and Restore System State Example")
+
+    # Backup the system
+    print("Backing up the system state...")
+    handle_command("backup_system")
+
+    # Restore the system from the backup
+    print("Restoring the system state from backup...")
+    handle_command("restore_system")
+
+# Run the backup and restore example
+backup_and_restore_example()
+Expected Output:
+sql
+Copy code
+Backup and Restore System State Example
+Backing up the system state...
+Restoring the system state from backup...
+Example 5: Installing a Package
+This example shows how to install a package in the system. The install_package function assumes that the package manager is properly set up.
+
+Install Package Example
+python
+Copy code
+# Install Package Example Program
+
+def install_package_example():
+    print("Install Package Example")
+
+    # Install a package (example: 'curl')
+    package_name = "curl"
+    print(f"Installing package {package_name}...")
+    handle_command(f"install_package {package_name}")
+
+# Run the install package example
+install_package_example()
+Expected Output:
+mathematica
+Copy code
+Install Package Example
+Installing package curl...
+Example 6: Create and Zip a Directory
+This example demonstrates how to create a directory, add files to it, and zip it.
+
+Create and Zip Directory Example
+python
+Copy code
+# Create and Zip Directory Example Program
+
+def create_and_zip_directory():
+    print("Create and Zip Directory Example")
+
+    # Create a directory
+    directory_name = "myfolder"
+    print(f"Creating directory {directory_name}...")
+    handle_command(f"create_directory {directory_name}")
+
+    # Create some files inside the directory
+    handle_command(f"create_file {directory_name}/file1.txt 'This is file 1'")
+    handle_command(f"create_file {directory_name}/file2.txt 'This is file 2'")
+
+    # Zip the directory
+    zip_filename = "myfolder.zip"
+    print(f"Zipping the directory {directory_name} into {zip_filename}...")
+    handle_command(f"zip_directory {directory_name} {zip_filename}")
+
+# Run the create and zip directory example
+create_and_zip_directory()
+Expected Output:
+csharp
+Copy code
+Create and Zip Directory Example
+Creating directory myfolder...
+Creating file myfolder/file1.txt with content: This is file 1
+Creating file myfolder/file2.txt with content: This is file 2
+Zipping the directory myfolder into myfolder.zip...
