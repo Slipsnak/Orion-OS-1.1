@@ -1,1 +1,1 @@
-the Orion_OS1.1.py Gui does not work and is being fixed 
+the OrionOS1.1GUI.py is the new graphical interface 
